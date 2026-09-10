@@ -61,3 +61,5 @@ assets/cubox_logo_src.png  # 图标源素材（Cubox 官方 logo）
 - 国际版账号需将 `wxt.config.ts` 中的 `cubox.pro` 改为 `cubox.cc`
 - API 细节见 `../cubox-api/docs/API.md`；需求与决策依据见 `REQUIREMENTS.md`；协作规范见 `REQUIREMENTS_PROCESS.md`
 - 分发包：`npm run zip` 产出 `.output/` 下 chrome/firefox 两个 zip；`.crx` 需经 `npx crx pack .output/chrome-mv3` 签名打包（生成 key.pem）；firefox 的 `.xpi` 由 firefox zip 改名得到，未签名，仅支持 about:debugging 临时载入或关闭签名的环境安装
+- firefox fork可运行，chromium 内核没测试过
+
