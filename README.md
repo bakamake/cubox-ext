@@ -47,9 +47,9 @@ tools/gen_icon.py          # 图标生成：官方 logo → Material You 风格�
 assets/cubox_logo_src.png  # 图标源素材（Cubox 官方 logo）
 ```
 
-## 跨内核要点（框架已代劳的部分）
+## 跨内核特性
 
-- `browser.*` API 由 WXT 统一 polyfill，直接写 `browser.tabs.query(...)` 即可
+- `browser.*` API 由 WXT 统一 polyfill，直接写 `browser.tabs.query(...)` 
 - `storage` 自动导入（unstorage 风格：`local:token`）
 - manifest 差异（service_worker vs scripts、action vs browser_action、host_permissions 合并）由 `wxt build -b <browser>` 自动处理
 - gecko id 位于 `wxt.config.ts` 的 `browser_specific_settings`，更换正式 id 时修改该处
